@@ -95,6 +95,7 @@ colourwheel = function(target, size, prefix){
         if (bu_callback) {
             bu_callback(get_colour());
         }
+        return false;
     } 
     function set_hue(angle) {
         var myelt = document.getElementById(idprefix+"sat-value");
@@ -165,6 +166,7 @@ colourwheel = function(target, size, prefix){
                 bu_callback(get_colour());
             }
         }
+        return false;
     }
     
     function set_sv(sat,val) {
